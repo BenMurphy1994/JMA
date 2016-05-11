@@ -1,0 +1,52 @@
+.header {
+	background: #313439;
+	color: #FFF;
+	height: 80px;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+}
+.contact-number {
+	float: right;
+	display: inline-block;
+	line-height: 80px;
+	font-size: 1.3em;
+	opacity: .8;
+	a {
+		color: #FFF;
+		text-decoration: none;
+	}
+	span {
+		margin-right: 10px;
+	}
+	&:hover {
+		opacity: 1;
+	}
+}
+.logo, .navigation {
+	float: left;
+	display: inline-block;
+}
+.logo {
+	background: #4f5155;
+	height: 90px;
+}
+.navigation {
+	li {
+		float: left;
+		display: block;
+		margin: 0 15px;
+		a {
+			color: #FFF;
+			font-family: OpenSans-Semibold;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 80px;
+			font-size: 1.1em;
+			&:hover {
+				border-bottom: 3px solid #9c5c41;
+				text-decoration: none;
+			}
+		}
+	}
+}
