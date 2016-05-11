@@ -1,5 +1,5 @@
 .header {
-	background: #313439;
+	background: rgba(0,0,0,0.8);
 	color: #FFF;
 	height: 80px;
 	position: fixed;
@@ -22,6 +22,10 @@
 	&:hover {
 		opacity: 1;
 	}
+
+	@include break-point(800px) {
+		display: none;
+	}
 }
 .logo, .navigation {
 	float: left;
@@ -30,12 +34,24 @@
 .logo {
 	background: #4f5155;
 	height: 90px;
+	.logo-img {
+		margin: 15px;
+	}
 }
 .navigation {
+	@include break-point(880px){
+		padding-left: 16px;
+	}
+	@include break-point(610px){
+		display: none;
+	}				
 	li {
 		float: left;
 		display: block;
 		margin: 0 15px;
+		@include break-point(880px){
+			margin: 0 8px;
+		}
 		a {
 			color: #FFF;
 			font-family: OpenSans-Semibold;
