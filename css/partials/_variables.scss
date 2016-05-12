@@ -44,7 +44,7 @@ $brown: #9c5c41;
 $beige: #f5d6c7;
 
 @mixin break-point($size) {
-  @media (max-width: $size) {
+  @media screen and (max-width: $size) {
     @content;
   }
 }
